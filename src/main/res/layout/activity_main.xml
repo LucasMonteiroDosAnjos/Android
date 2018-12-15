@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/degrade"
+    tools:context=".activity.MainActivity">
+    <include android:id="@+id/toolbar"
+        layout="@layout/toolbar">
+    </include>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="269dp"
+        android:layout_height="243dp"
+        android:layout_above="@+id/valor"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/umidade_solo" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="31dp"
+        android:text="Verificação da umidade do solo"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+    <TextView
+        android:id="@+id/valor"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="209dp"
+        android:textColor="@android:color/black"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="241dp"
+        android:layout_height="44dp"
+        android:layout_alignBaseline="@+id/valor"
+        android:layout_alignParentStart="true"
+        android:text="Umidade do solo:"
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="50dp"
+        android:layout_height="44dp"
+        android:layout_alignTop="@+id/valor"
+        android:layout_toEndOf="@+id/textView2"
+        android:text="%"
+        android:textColor="@android:color/background_dark"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="126dp"
+        android:layout_marginStart="15dp"
+        android:text="Valor analógico: "
+        android:textSize="28sp" />
+
+    <TextView
+        android:id="@+id/analogValue"
+        android:layout_width="117dp"
+        android:layout_height="46dp"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignStart="@+id/valor"
+        android:textColor="@android:color/background_dark"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:background="#FFD740"
+        android:paddingBottom="2dp"
+        android:paddingEnd="4dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingStart="4dp"
+        android:paddingTop="4dp"
+        android:shadowColor="#37474F"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="6"
+        android:textAppearance="@android:style/TextAppearance.Material.Medium"
+        android:textColor="#2E7D32"
+        android:textSize="24sp"
+        android:textStyle="italic" />
+
+    <ToggleButton
+        android:id="@+id/toggleButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="66dp"
+        android:text="ToggleButton"
+        android:textOff="Led desligado"
+        android:textOn="LED LIGADO" />
+
+</RelativeLayout>

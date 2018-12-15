@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">>
+    <item android:title="settings" android:id="@+id/action_settings" android:orderInCategory="100" app:showAsAction="never" ></item>
+    <item
+        android:id="@+id/action_bar"
+        android:orderInCategory="200"
+        android:title="Histórico"
+        android:icon="@drawable/humidity_wather_16790"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_chat"
+        android:orderInCategory="300"
+        android:title="Chat"
+        android:icon="@drawable/ic_stat_name"
+        app:showAsAction="ifRoom"></item>
+    <item android:id="@+id/action_graph"
+        android:orderInCategory="400"
+        android:title="Gráfico de dados"
+        app:showAsAction="ifRoom"></item>
+    <item android:id="@+id/action_logout"
+          android:orderInCategory="150"
+          android:title="Sair"
+          app:showAsAction="never"></item>
+</menu>
